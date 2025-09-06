@@ -1,7 +1,8 @@
 import React from "react";
+import AtomicAssets from '../../public/AtomicAssets.jpg'
 
 const featuredBooks = [
-  { title: "Atomic Habits", author: "James Clear", img: "/covers/atomic-habits.jpg" },
+  { title: "Atomic Habits", author: "James Clear", img: "AtomicAssets" },
   { title: "Educated", author: "Tara Westover", img: "/covers/educated.jpg" },
   { title: "Sapiens", author: "Yuval Noah Harari", img: "/covers/sapiens.jpg" },
 ];
