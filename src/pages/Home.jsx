@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Herosection'
 import { FeaturedBooks } from '../components/Featuredbooks'
 import QuoteGenerator from '../components/QuoteGenerator'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -12,6 +13,8 @@ const Home = () => {
       <Hero/>
       <FeaturedBooks/>
         <QuoteGenerator/>
+        <Footer/>
+        
       
      
       
