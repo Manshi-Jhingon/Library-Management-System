@@ -1,5 +1,5 @@
 import React from "react";
-import AtomicAssets from '../../public/AtomicAssets.jpg'
+// import AtomicAssets from '../../public/AtomicAssets.jpg'
 
 const featuredBooks = [
   { title: "Atomic Habits", author: "James Clear", img: "AtomicAssets" },
