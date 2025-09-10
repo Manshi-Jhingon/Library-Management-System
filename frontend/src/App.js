@@ -3,9 +3,13 @@ import './App.css';
 import Home from './pages/Home';
 import AllBooks from './components/AllBooks';
 
+
+
 // ✅ import from react-router-dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import TopPicks from './components/TopPicks';
+
 
 function App() {
   return (
@@ -14,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<AllBooks />} />
+        <Route path="/toppicks" element={<TopPicks/>}/>
+
       </Routes>
     </Router>
   );
