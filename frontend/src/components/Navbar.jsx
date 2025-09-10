@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="/books" className={linkClasses}>Books</a>
           <a href="/toppicks" className={linkClasses}>Top Picks</a>
           <a href="/about" className={linkClasses}>About Library</a>
-          <a href="Login" className={linkClasses}>
+          <a href="/Login" className={linkClasses}>
   <FaSignInAlt className="w-5 h-5" />
 </a>
         </div>

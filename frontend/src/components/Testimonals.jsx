@@ -1,19 +1,11 @@
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+
 
 export default function Testimonials() {
   const cardsRef = useRef([]);
 
-  useEffect(() => {
-    // Animate cards on load
-    gsap.from(cardsRef.current, {
-      y: 100,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.3,
-      ease: "back.out(1.7)",
-    });
-  }, []);
+//   useEffect(() => {
+
 
   const testimonials = [
     {
@@ -66,7 +58,7 @@ export default function Testimonials() {
             </div>
 
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 blur-2xl transition duration-500"></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 opacity-900 group-hover:opacity-900 transition duration-500"></div>
           </div>
         ))}
       </div>
