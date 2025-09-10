@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaSignInAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -23,9 +24,11 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <a href="/" className={linkClasses}>Home</a>
           <a href="/books" className={linkClasses}>Books</a>
-          <a href="/members" className={linkClasses}>Members</a>
-          <a href="/issues" className={linkClasses}>Issue/Return</a>
-          <a href="/reports" className={linkClasses}>Reports</a>
+          <a href="/toppicks" className={linkClasses}>Top Picks</a>
+          <a href="/about" className={linkClasses}>About Library</a>
+          <a href="Login" className={linkClasses}>
+  <FaSignInAlt className="w-5 h-5" />
+</a>
         </div>
         {/* Mobile Hamburger */}
         <div className="md:hidden flex items-center">
@@ -45,9 +48,11 @@ const Navbar = () => {
         <div className="md:hidden px-2 pt-2 pb-3 space-y-1 bg-blsck">
           <a href="/" className={linkClasses}>Home</a>
           <a href="/books" className={linkClasses}>Books</a>
-          <a href="/members" className={linkClasses}>Members</a>
-          <a href="/issues" className={linkClasses}>Issue/Return</a>
-          <a href="/reports" className={linkClasses}>Reports</a>
+          <a href="/members" className={linkClasses}>Top Picks</a>
+          <a href="/issues" className={linkClasses}>About Library</a>
+                    <a href="Login" className={linkClasses}>
+  <FaSignInAlt className="w-5 h-5" />
+</a>
         </div>
       )}
     </nav>

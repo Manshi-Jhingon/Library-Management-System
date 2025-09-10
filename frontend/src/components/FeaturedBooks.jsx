@@ -5,6 +5,9 @@ import img1 from '../images/AtomicAssets.jpg';
 import img2 from '../images/Shapiens.jpeg';
 import img3 from '../images/Educated.jpeg';
 import img4 from '../images/Wings.jpeg';
+import img5 from '../images/MockingBird.jpg'
+// import img6 from '../images/Alchemist.jpeg';      // Add your image
+// import img7 from '../images/NineteenEightyFour.jpeg'; // Add your image
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +16,9 @@ const featuredBooks = [
   { title: "Educated", author: "Tara Westover", img: img3 },
   { title: "Sapiens", author: "Yuval Noah Harari", img: img2 },
   { title: "Wings Of Fire", author: "A. P. J. Abdul Kalam", img: img4 },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", img: img5 },
+  // { title: "The Alchemist", author: "Paulo Coelho", img: img6 },
+  // { title: "1984", author: "George Orwell", img: img7 },
 ];
 
 export const FeaturedBooks = () => {
@@ -22,7 +28,6 @@ export const FeaturedBooks = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Animate title
       gsap.from(titleRef.current, {
         opacity: 0,
         y: -50,
@@ -35,10 +40,8 @@ export const FeaturedBooks = () => {
         },
       });
 
-      // Animate each card individually
       cardsRef.current.forEach((card, i) => {
         if (!card) return;
-
         gsap.from(card, {
           opacity: 0,
           y: 50,
@@ -78,9 +81,8 @@ export const FeaturedBooks = () => {
               alt={book.title}
               className="w-full h-full object-cover rounded-md mb-4"
             />
-            {/* <h3 className="font-semibold text-lg text-gray-900 truncate">
-              {book.title}
-            </h3> */}
+            {/* Uncomment below if you want to show title and author */}
+            {/* <h3 className="font-semibold text-lg text-gray-900 truncate">{book.title}</h3> */}
             {/* <p className="text-gray-600 text-sm">{book.author}</p> */}
           </div>
         ))}
