@@ -21,7 +21,7 @@ const BookCard = ({ book, index }) => {
         opacity: 1,
         y: 0,
         scale: 1,
-        duration: 0.6,
+        duration: 1.5,
         ease: 'power2.out',
         delay: index * 0.08,
         scrollTrigger: {
