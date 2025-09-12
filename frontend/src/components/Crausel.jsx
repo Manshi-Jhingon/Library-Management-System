@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Images
-import img1 from '../images/Slide-1.jpeg';
+import img1 from '../images/steveJobs.mp4';
 import img2 from '../images/Slide-2.webp';
 import img3 from '../images/Slide-3.jpeg';
 import vid1 from '../images/vid1.mp4';
@@ -74,7 +74,7 @@ const AdvancedCarousel = () => {
         ref={swiperRef}
         modules={[Autoplay, Navigation, Pagination]}
         autoplay={{
-          delay: 5000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
